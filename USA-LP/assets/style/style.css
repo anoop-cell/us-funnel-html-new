@@ -31,21 +31,24 @@ backdrop-filter: blur(12px);
 header img
 {
 
-	width:195px;
-	height:40px !important;
-	    object-fit: contain;
+/*	width:195px;
+	height:40px !important; */
+	    object-fit: cover;
+		  aspect-ratio: 39 / 8;
+
 
 } 
 
 
-@media(max-width:767px)
+@media(max-width:767px) 
 {
 
 header img
 {
-
+/*
 	width:174px;
 	height:36px !important;
+	*/
     
 } 
 	

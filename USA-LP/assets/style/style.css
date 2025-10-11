@@ -1413,7 +1413,6 @@ background-color: #1d4ed8 !important;
 img {
   max-width: 100%;
   height: auto;
-  aspect-ratio: 4 / 3; /* or whatever your image's true ratio is */
 }   
 
 
@@ -2075,6 +2074,7 @@ img {
         transition: none;
     }
 }
+
 
 
 

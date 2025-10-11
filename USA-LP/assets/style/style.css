@@ -1402,6 +1402,12 @@ background-color: #1d4ed8 !important;
 }
 
 
+
+@font-face {
+  display: swap;
+}
+
+
 /* ========================================
    POPUP OVERLAY STYLES
    ======================================== */
@@ -2060,6 +2066,7 @@ background-color: #1d4ed8 !important;
         transition: none;
     }
 }
+
 
 
 

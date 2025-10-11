@@ -415,8 +415,11 @@ padding-bottom: 80px;
 }
 
 #owl-example1 .owl-item img {
+/*
 width:135px;
-height: 43px;
+height: 43px; */
+  aspect-ratio: 135 / 43;
+ 
 object-fit: contain;
 } 
 
@@ -1556,6 +1559,14 @@ img {
   src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/webfonts/fa-regular-400.woff2') format('woff2');
 }  
 
+
+/* Font Awesome 7  */     
+@font-face {
+  font-family: 'Font Awesome 7 Free';
+ 
+  font-display: swap;
+  src: url('https://fonts.gstatic.com/s/inter/v20/UcCo3FwrK3iLTcviYwY.woff2') format('woff2');
+}  
 
 
 

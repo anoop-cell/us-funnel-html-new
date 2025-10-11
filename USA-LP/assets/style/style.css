@@ -1469,6 +1469,14 @@ object-fit: contain;
 }
 
 
+
+.modal-dialog
+{
+	
+	justify-content:center;
+}
+
+
 .modal h6
 {
 

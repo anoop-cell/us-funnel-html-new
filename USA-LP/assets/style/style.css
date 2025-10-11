@@ -13,6 +13,9 @@ html,body
 {
     overflow-x: hidden;
     width: 100%;
+	height:100%;
+	padding:0;
+	margin:0;
 }
 
 
@@ -420,7 +423,7 @@ width:135px;
 height: 43px; */
   aspect-ratio: 135 / 43;
  
-object-fit: contain;
+object-fit: scale-down;
 } 
 
 #owl-example1 .owl-dots, #owl-example2 .owl-dots , #owl-example3 .owl-dots
@@ -1359,9 +1362,9 @@ padding: 16px;
 
 @media(max-width:992px)
 {
-.mentor-intro
+.mentor-text h3
 {
-margin-bottom: 35px;
+margin-top: 35px;
 }   
 
 }
@@ -1568,6 +1571,15 @@ img {
   src: url('https://fonts.gstatic.com/s/inter/v20/UcCo3FwrK3iLTcviYwY.woff2') format('woff2');
 }  
 
+
+
+#owl-example3 img 
+{
+	
+	object-fit:contain; 
+	  aspect-ratio: 20 / 13;
+
+} 
 
 
 

@@ -1013,8 +1013,9 @@ min-height: 100%;
 {
     width: 48px;
         min-width: 48px;
+         height: 48px;
 
-}
+}  
 
 
 .stand-out-box
@@ -1038,11 +1039,22 @@ line-height: 1.3em;
 
 }
 
+.stand-out-section img
+{
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+
+
 .roles img
 {
 
-    width:40px;
-    min-width: 40px;
+    width:37px;
+    min-width: 37px;
+    height: 37px;
+    object-fit: contain;
 }
 
 .roles 
@@ -1140,6 +1152,7 @@ font-size: 20px;
 
 width: 40px !important;
 min-width: 40px !important;
+height: 40px !important;
 }
 
 
@@ -1357,13 +1370,8 @@ line-height: 1.3em;
     .learn-box img {
     width: 30px;
     min-width: 30px;
-}
-
-.stand-out-box img
-{
-
-    width:30px;
-    min-width: 30px;
+    height: 30px;
+object-fit: contain;
 }
 }
 

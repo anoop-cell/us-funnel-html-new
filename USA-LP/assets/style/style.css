@@ -43,7 +43,8 @@ header img
 {
 
 	width:174px;
-	height:36px;
+	height:36px !important;
+    object-fit: contain;
 } 
 	
 }

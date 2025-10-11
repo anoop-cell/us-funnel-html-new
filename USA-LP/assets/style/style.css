@@ -667,7 +667,7 @@ cubic-bezier(0.4, 0, 0.2, 1);
 padding: 16px 24px;
 background-color: rgba(49, 130, 206, 1);
 border-radius: 0.75rem;
-
+max-width: 100%;
  
   width: 322px;
 }
@@ -1158,6 +1158,25 @@ height: 40px !important;
 
 
 
+@media(max-width:1199px) 
+{
+
+    .finance-success-box h4
+{
+ 
+font-size: 35px;
+margin-bottom: 25px;
+
+}
+.box-btn 
+{
+padding: 0 10px;
+
+}
+
+}
+
+
 @media(max-width:1199px)
 {
 
@@ -1437,11 +1456,9 @@ background-color: #1d4ed8 !important;
 
 
 
-@font-face {
-  display: swap;
-}
 
 
+ 
 
 
 img {

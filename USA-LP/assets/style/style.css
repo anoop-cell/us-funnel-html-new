@@ -27,6 +27,27 @@ backdrop-filter: blur(12px);
 -webkit-backdrop-filter: blur(12px); /* For Safari */
 }
 
+
+header img
+{
+
+	width:195px;
+	height:40px;
+}
+
+
+@media(max-width:767px)
+{
+
+header img
+{
+
+	width:100%;
+	height:auto;
+}
+	
+}
+
 .container
 {
     max-width: 1200px;
@@ -655,6 +676,7 @@ border-radius: 0.75rem;
   left: 50%;
   transform: translate(-50%, -50%);
   bottom: 0;
+	width:100%;
 }
 
 
@@ -2075,6 +2097,7 @@ img {
         transition: none;
     }
 }
+
 
 
 

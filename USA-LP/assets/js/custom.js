@@ -699,4 +699,48 @@ function toggleFullscreen() {
             document.webkitExitFullscreen();
         }
     }
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // JavaScript for Lazy Loading
+    document.addEventListener("DOMContentLoaded", function() {
+      // Select all images with class 'lazy-load'
+      const images = document.querySelectorAll('img.lazy-load');
+
+      // Create an IntersectionObserver instance
+      const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          // If the image is in the viewport (entry.intersectionRatio > 0)
+          if (entry.isIntersecting) {
+            const img = entry.target;
+            // Replace the 'src' with the real image URL from 'data-src'
+            img.src = img.getAttribute('data-src');
+            // Optionally, remove the class to avoid re-processing the image
+            img.classList.remove('lazy-load');
+            // Stop observing the image since it's already loaded
+            observer.unobserve(img);
+          }
+        });
+      }, {
+        // Trigger the observer slightly before the image enters the viewport
+        rootMargin: '200px 0px', // Image loads when it is 200px from the viewport
+      });
+
+      // Observe each lazy-load image
+      images.forEach(image => {
+        observer.observe(image);
+      });
+    });
+  

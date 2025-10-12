@@ -27,31 +27,43 @@ $(document).ready(function(){
 
 
 $(document).ready(function(){
-  $("#owl-example2").owlCarousel({
-      loop: true,             // Enables infinite looping
-      margin: 30,
-      items: 4,
-      autoplay: true,        // Enables automatic sliding
-      autoplayTimeout: 4000, // Time between slides in milliseconds
-      autoplaySpeed: 2000,
-      smartSpeed: 2000,
-      autoplayHoverPause: true, // Pause on hover
-      responsive : {
-          0 : {
-              items : 2
-          },
-          600 : {
-              items : 2
-          },
-          1000 : {
-              items : 4
-          }
-      },
-      nav: true,              // Enable navigation arrows
-      navText: ['<i class="fa-solid fa-chevron-left"></i>', '<i class="fa-solid fa-chevron-right"></i>']
-  });
-});  
-
+    // Initialize Owl Carousel
+    $("#owl-example2").owlCarousel({
+        items: 3,
+        loop: true,
+        margin: 20,
+        nav: true,           // Disable navigation arrows
+        dots: false,           // Enable dots navigation
+        autoplay: false,      // Disable autoplay
+        autoplayHoverPause: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            768: {
+                items: 2
+            },
+            1024: {
+                items: 3
+            }
+        }
+    });
+    
+    // Stop carousel when video starts playing
+    $('.owl-carousel').on('click', 'iframe', function() {
+        $("#owl-example2").trigger('stop.owl.autoplay');
+    });
+    
+    // Pause all videos when carousel slides
+    $("#owl-example2").on('changed.owl.carousel', function(event) {
+        // Get all iframes and pause them
+        $('.owl-carousel iframe').each(function() {
+            var iframe = $(this);
+            var player = new Vimeo.Player(iframe[0]);
+            player.pause();
+        });
+    });
+});
 
 
 

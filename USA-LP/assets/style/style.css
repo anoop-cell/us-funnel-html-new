@@ -1540,6 +1540,23 @@ img {
 
 
 
+/* Ensure iframes fit properly */
+#owl-example2 .owl-carousel .ratio iframe {
+    object-fit: cover;
+}
+
+/* Add slight spacing */
+#owl-example2 .owl-carousel .item {
+    padding: 5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #owl-example2 .owl-carousel .item {
+        padding: 3px;
+    }
+}
+
 
 
 

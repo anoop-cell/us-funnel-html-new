@@ -88,7 +88,7 @@ $(document).ready(function(){
             1024: {
                 items: 4 
             }
-        }, 
+        },  
 
         nav: true,              // Enable navigation arrows
       navText: ['<i class="fa-solid fa-chevron-left"></i>', '<i class="fa-solid fa-chevron-right"></i>']

@@ -26,27 +26,72 @@ $(document).ready(function(){
 
 
 
+
+   
+
+
+
+
+/*
+$(document).ready(function(){
+  $("#owl-example2").owlCarousel({
+      loop: true,             // Enables infinite looping
+      margin: 30,
+      items: 4,
+      autoplay: false,        // Enables automatic sliding
+      autoplayTimeout: 4000, // Time between slides in milliseconds
+      autoplaySpeed: 2000,
+      smartSpeed: 2000,
+      autoplayHoverPause: true, // Pause on hover
+      responsive : {
+          0 : {
+              items : 2
+          },
+          600 : {
+              items : 2
+          },
+          1000 : {
+              items : 4
+          }
+      },
+      nav: true,              // Enable navigation arrows
+      navText: ['<i class="fa-solid fa-chevron-left"></i>', '<i class="fa-solid fa-chevron-right"></i>']
+  });
+});   */
+
+
+
+
+
+
 $(document).ready(function(){
     // Initialize Owl Carousel
     $("#owl-example2").owlCarousel({
-        items: 3,
+        items: 4,
         loop: true,
         margin: 20,
         nav: true,           // Disable navigation arrows
         dots: false,           // Enable dots navigation
-        autoplay: false,      // Disable autoplay
+        autoplay: true,      // Disable autoplay
+  autoplayTimeout: 4000, // Time between slides in milliseconds
+      autoplaySpeed: 2000,
+      smartSpeed: 2000,
+
         autoplayHoverPause: true,
         responsive: {
             0: {
-                items: 1
+                items: 2
             },
             768: {
                 items: 2
             },
             1024: {
-                items: 3
+                items: 4 
             }
-        }
+        }, 
+
+        nav: true,              // Enable navigation arrows
+      navText: ['<i class="fa-solid fa-chevron-left"></i>', '<i class="fa-solid fa-chevron-right"></i>']
     });
     
     // Stop carousel when video starts playing
@@ -64,6 +109,36 @@ $(document).ready(function(){
         });
     });
 });
+
+
+
+
+
+
+
+
+    
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

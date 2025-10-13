@@ -30,7 +30,7 @@ header {
   background-color: rgb(255 255 255 / 0.95);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  /* For Safari */
+  
 }
 
 header img {
@@ -745,9 +745,28 @@ iframe .rounded-3 {
 }
 
 .mentor-section img {
-  max-width: 442px;
+  max-width: 442px !important;
   aspect-ratio: 442 / 477;
 }
+
+.row-height
+{
+
+  min-height: 610px;
+}
+
+@media(max-width:992px)
+{
+.row-height
+{
+
+  min-height: unset;
+}
+
+}
+
+
+
 
 .mentor-intro {
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
@@ -978,6 +997,8 @@ max-width: 980px;
 }
 
 
+
+
 @media (max-width: 1199px) {
   .finance-success-box h4 {
     font-size: 35px;
@@ -1122,7 +1143,17 @@ max-width: 980px;
 @media (max-width: 767px) {
   .mentor-text h3 {
     margin-bottom: 20px;
+    font-size: 18px;
   }
+.mentor-intro
+{
+  font-size: 4.5vw;
+}
+.mentor-section p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
 }
 
 @media (max-width: 767px) {

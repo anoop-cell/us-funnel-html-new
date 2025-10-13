@@ -40,14 +40,15 @@ header img {
   aspect-ratio: 39 / 8;
 }
 
+/*
 @media (max-width: 767px) {
   header img {
-    /*
+    
 	width:174px;
 	height:36px !important;
-	*/
+	
   }
-}
+} */
 
 .container {
   max-width: 1200px;
@@ -967,6 +968,15 @@ iframe .rounded-3 {
   min-width: 40px !important;
   height: 40px !important;
 }
+
+
+
+.testimonial
+{
+max-width: 980px;
+
+}
+
 
 @media (max-width: 1199px) {
   .finance-success-box h4 {

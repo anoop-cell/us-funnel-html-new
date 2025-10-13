@@ -1,3 +1,6 @@
+
+// Logo Slider
+
 $(document).ready(function(){
   $("#owl-example1").owlCarousel({
       loop: true,
@@ -67,12 +70,12 @@ $(document).ready(function(){
 $(document).ready(function(){
     // Initialize Owl Carousel
     $("#owl-example2").owlCarousel({
-        items: 4,
-        loop: true,
+        items: 2,
+        loop: false,
         margin: 20,
         nav: true,           // Disable navigation arrows
         dots: false,           // Enable dots navigation
-        autoplay: true,      // Disable autoplay
+        autoplay: false,      // Disable autoplay
   autoplayTimeout: 4000, // Time between slides in milliseconds
       autoplaySpeed: 2000,
       smartSpeed: 2000,
@@ -86,7 +89,7 @@ $(document).ready(function(){
                 items: 2
             },
             1024: {
-                items: 4 
+                items: 2 
             }
         },  
 

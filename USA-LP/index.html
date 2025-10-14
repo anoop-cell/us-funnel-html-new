@@ -60,7 +60,19 @@ src="https://www.facebook.com/tr?id=771447932136201&ev=PageView&noscript=1"
 
 
 
-
+<!-- Add Pixel Events to the button's click handler -->
+<script type="text/javascript">
+  var buttons = document.querySelectorAll('.addToCartButton');
+  buttons.forEach(function(button) {
+    button.addEventListener(
+      'click',
+      function() {
+        fbq('track', 'Lead');
+      },
+      false
+    );
+  });
+</script>
 
 
 
@@ -1756,14 +1768,14 @@ src="https://www.facebook.com/tr?id=771447932136201&ev=PageView&noscript=1"
                         <option value=Other>Other</option>
                     </select>
                 </div>
-                <button type=submit id=submit-btn class=btn-submit>
+                <button type="submit" id="submit-btn" class="btn-submit addToCartButton">
                     <span id=submit-text>Submit</span>
                     <span id=loading-text class=hidden>Submitting...</span>
                 </button>
             </form>
         </div>
     </div>
-
+ 
    
   
 <script src="assets/js/video-form.js" defer></script>
